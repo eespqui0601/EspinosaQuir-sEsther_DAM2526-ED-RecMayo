@@ -43,6 +43,7 @@ public class ServicioPedidos {
 			entradaSalida.mostrarMensaje("Precio del juego: " + lineaPedido.getJuego().getPrecio());
 		}
 		entradaSalida.mostrarMensaje("--------------------------------------------------");
+		entradaSalida.mostrarMensaje("Precio total: " + pedido.calcularTotal());
 	}
 
 }
