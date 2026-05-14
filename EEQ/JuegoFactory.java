@@ -21,7 +21,7 @@ public class JuegoFactory {
 			precio = 50;
 		}
 		else {
-			precio = 0;
+			precio = 10;
 		}
 		return new Juego(nombre, precio);
 	}
