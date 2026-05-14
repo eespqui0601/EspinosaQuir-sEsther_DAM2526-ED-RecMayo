@@ -36,11 +36,13 @@ public class ServicioPedidos {
 		entradaSalida.mostrarMensaje("Nombre: " + pedido.getCliente().getNombre());
 		entradaSalida.mostrarMensaje("Email: " + pedido.getCliente().getEmail());
 		for (LineaPedido lineaPedido : pedido.getLineas()) {
+			entradaSalida.mostrarMensaje("--------------------------------------------------");
 			entradaSalida.mostrarMensaje("Subtotal: " + lineaPedido.calcularSubtotal());
 			entradaSalida.mostrarMensaje("Cantidad: " + lineaPedido.getCantidad());
 			entradaSalida.mostrarMensaje("Nombre del juego: " + lineaPedido.getJuego().getNombre());
 			entradaSalida.mostrarMensaje("Precio del juego: " + lineaPedido.getJuego().getPrecio());
 		}
+		entradaSalida.mostrarMensaje("--------------------------------------------------");
 	}
 
 }
